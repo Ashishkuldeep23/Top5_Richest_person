@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Richest Persons in World</title>
+
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            background-color:rgb(235, 218, 218)  ;
+        }
+
+        
+
+        body{
+            z-index: 0;
+            text-align: center;
+        }
+
+
+
+        header{
+            background-color: darkslategray;
+            
+            height: 10vh;
+            width: 100%;
+
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            
+        }
+
+
+        footer{
+
+            background-color: darkslategray;
+
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            
+            height: 5vh;
+            width: 100%;
+
+            position:sticky ;
+            bottom: 0;
+            z-index: 10;
+
+        }
+
+
+        .person-name{
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+            
+            align-content: center;
+            
+            padding: 5vh;
+            padding-top: 10vh;
+        }
+
+
+        .pics{
+            height: 90%;
+            width: 99.5%;
+
+            border: 1px solid white;
+            border-radius: 20px;
+
+        }
+
+        .card1{
+            height:400px;
+            width: 240px;
+            background-color:cyan;
+            color: darkblue;
+
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+
+        .card2{
+            height:400px;
+            width: 240px;
+            background-color:cyan;
+            color: darkblue;
+
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+
+        .card3{
+            height:400px;
+            width: 240px;
+            background-color:cyan;
+            color: darkblue;
+
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+
+        .card4{
+            height:400px;
+            width: 240px;
+            background-color:cyan;
+            color: darkblue;
+
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+
+        .card5{
+            height:400px;
+            width: 240px;
+            background-color:cyan;
+            color: darkblue;
+
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+        .card1:hover{
+            transform: scale(1.1);
+        }
+
+        .card2:hover{
+            transform: scale(1.1);
+        }
+
+        .card3:hover{
+            transform: scale(1.1);
+        }
+
+        .card4:hover{
+            transform: scale(1.1);
+        }
+
+        .card5:hover{
+            transform: scale(1.1);
+        }
+
+
+        .top5{
+
+            font-size: 8vh;
+            letter-spacing: 1vh;
+
+        }
+
+
+        .name{
+            background-color:transparent;
+            font-size: 4vh;
+        }
+
+
+        .detail_table_css{
+
+            display: flex;
+            justify-content: center;
+
+
+            margin: 10vh 0vh;
+
+        }
+
+
+        .main_table{
+            
+            height: 80vh;
+            width: 65vw;
+           
+            
+            display: grid;
+            border: 1px black solid;
+              
+            
+
+            grid-row-gap: 2vh;
+            grid-column-gap: 1vw;
+
+
+           
+            grid-template-columns:8% 20% 22% 40%;
+
+            grid-template-rows:11% 11% 11% 11% 11% 11%;
+
+        }
+
+
+
+        .last_in_table{
+            grid-column: 1/5;
+        }
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        /* @Media */
+
+
+
+        /* for smaller form */
+        @media (min-width:0px) and (max-width:436px) {
+            
+           
+
+            .main_table{
+                height:120vh;
+                width:100vw;
+            }
+
+            .name{
+                font-size: 6vh;
+            }
+
+            .top5{
+
+                letter-spacing: 0;
+                font-size: 5vh;
+
+            }
+
+
+        }
+
+
+        /* For mobile */
+
+        @media (min-width:437px) and (max-width:680px) {
+            
+           
+
+            .main_table{
+                height:90vh;
+                width:80vw;
+            }
+
+            .name{
+                font-size: 6vh;
+            }
+
+
+        }
+
+
+
+
+        /* For Tabs */
+
+        @media (min-width:680px) and (max-width:1000px) {
+            
+        
+
+            .main_table{
+                height:60vh;
+                width:75vw;
+            }
+
+            .name{
+                font-size: 6vh;
+            }
+
+
+        }
+
+       
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+
+    </header>
+    
+
+
+
+    <main>
+
+        
+        <h1 class="text_centre top5" >Top 5 Richest person in World</h1>
+
+        <div class="person-name">
+
+
+            <div class="card1" id="p1" > 
+
+                <img class="pics"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/330px-Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="Elon Musk"> 
+
+                <h3  class="name"  >1.Elon Musk</h3>
+                
+            </div>
+
+
+
+
+
+            <div class="card2" id="p2"> 
+                
+
+                    <img  class="pics"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/330px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Jeff Bezos">
+
+                    <h3 class="name" >2.Jeff Bezos</h3>
+
+
+            </div>
+
+
+            <div class="card3" id="p3"> 
+
+                <img  class="pics"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/330px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg" alt="Bernard Arnault">
+                <h3  class="name"  >3.Bernard Arnault</h3>
+
+
+            </div>
+
+
+            <div class="card4" id="p4">
+
+                <img  class="pics"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/330px-Bill_Gates_2017_%28cropped%29.jpg" alt="Bill Gates">
+                <h3  class="text_centre name"  >4.Bill Gates</h3>
+
+                
+            </div>
+
+
+            <div class="card5" id="p5"> 
+
+                
+                <img   class="pics"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/330px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg" alt="Warren Buffett">
+                <h3  class="name"  >5.Warren Buffett</h3>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="detail_table_css">
+
+            <div class="main_table">
+                <div class="item">SR.</div>
+                <div class="item">Name</div>
+                <div class="item">Net worth(USD)</div>
+                <div class="item">Artical on wikipedia</div>
+
+
+                <div class="item">1.</div>
+                <div class="item">Elon Musk</div>
+                <div class="item">$219 billion</div>
+                <div class="item"><a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank" >Wiki Aricle of Elon</a></div>
+
+
+                <div class="item">2.</div>
+                <div class="item">Jeff Bezos</div>
+                <div class="item">$177 billion</div>
+                <div class="item"><a href="https://en.wikipedia.org/wiki/Jeff_Bezos" target="_blank" >Wiki Aricle of Jeff</a></div>
+
+
+                <div class="item">3.</div>
+                <div class="item">Bernard Arnault</div>
+                <div class="item">$158 billion</div>
+                <div class="item"><a href="https://en.wikipedia.org/wiki/Bernard_Arnault" target="_blank" >Wiki Aricle of Bernard</a></div>
+
+
+                <div class="item">4.</div>
+                <div class="item">Bill Gates</div>
+                <div class="item">$129 billion</div>
+                <div class="item"><a href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank" >Wiki Aricle of Bill</a></div>
+
+
+                <div class="item">5.</div>
+                <div class="item">Warren Buffett</div>
+                <div class="item">$118 billion</div>
+                <div class="item"><a href="https://en.wikipedia.org/wiki/Warren_Buffett " target="_blank" >Wiki Aricle Of Warren</a></div>
+
+            <div class="centre last_in_table"> Main artical from wikipedia here : <a href="https://en.wikipedia.org/wiki/The_World%27s_Billionaires" target="_blank">The World's Billionaires</a></div>
+
+            </div>
+           
+
+        </div>
+        
+        
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+        <div style="background-color:darkslategray ; color:whitesmoke;">Created by: <a style="background-color:darkslategray; color: aqua;" href="ashish.html" target="_blank">Ashish Kuldeep</a></div>
+
+    </footer>
+
+
+
+    <script>
+        
+        p1.addEventListener("click",function(){
+            window.open("https://en.wikipedia.org/wiki/Elon_Musk" , "_blank")
+        })
+        
+        p2.addEventListener("click",function(){
+            window.open("https://en.wikipedia.org/wiki/Jeff_Bezos" , "_blank")
+        })
+        
+        p3.addEventListener("click",function(){
+            window.open("https://en.wikipedia.org/wiki/Bernard_Arnault" , "_blank")
+        })
+        
+        p4.addEventListener("click",function(){
+            window.open("https://en.wikipedia.org/wiki/Bill_Gates" , "_blank")
+        })
+        
+        p5.addEventListener("click",function(){
+            window.open("https://en.wikipedia.org/wiki/Warren_Buffett", "_blank")
+        })
+        
+    </script>
+
+
+</body>
+</html>
