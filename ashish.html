@@ -62,17 +62,16 @@
 
         }
 
-        .nav-right button {
+        .nav_right_button{
             display: flex;
             margin: auto;
             margin-top: 20px;
             border-radius: 20px;
             border: 2px solid black;
 
-
-
         }
 
+        
         .main {
             display: flex;
 
@@ -158,17 +157,29 @@
 
         /* zero size */
 
-        @media (max-width:290px) {
+        @media (max-width:480px) {
 
-            .main {
+           
 
-               
+            .main {         
                 display: block;
-
+               
             }
 
             .nav-left p{
-                font-size: 20px;
+                margin: 10px;
+                font-size: 25px;
+            }
+
+            .nav-right{
+                width: 20%;
+            }
+
+            .nav_right_button{
+                height: 30%;
+                width: 70%;
+                font-size: 8px;
+                text-align: center;
             }
 
             .picName {
@@ -181,38 +192,34 @@
 
             }
 
-            .details {
+            .name {
 
-                height: auto;
-                width: 50%;
-
-                font-size: 10px;
-
-            }
-
+                font-size: 2vh;
+                }
 
             .pic_and_name {
                 box-sizing: border-box;
 
                 height: auto;
-                width: 45%;
+                width: 70%;
                 margin: auto;
-
-
-
             }
 
-            .name {
+            .details {
 
-                font-size: 3vh;
-            }
-
-            .nav-right button {
                 height: auto;
-                width: 5%;
-                font-size: 1px;
-                text-align: center;
+                width: 80%;
+
+                font-size: 20px;
+
             }
+
+
+           
+
+            
+
+            
 
 
 
@@ -224,23 +231,37 @@
 
         /* Small Phones */
 
-        @media (min-width:290px) and (max-width:500px) {
+        @media (min-width:480px) and (max-width:770px) {
 
-            .main {
 
-                
-
+            .main {         
                 display: block;
-
+               
             }
 
             .nav-left p{
-                font-size: 28px;
+                margin: 7px;
+                font-size: 40px;
+            }
+
+            .nav-right{
+                width: 10%;
+            }
+
+            .nav_right_button{
+                height: 50%;
+                width: 80%;
+                font-size: 11px;
+                font-weight: 500;
+                text-align: center;
             }
 
             .picName {
                 height: auto;
-                width: 100vw;
+                width: 80vw;
+
+                margin: auto;
+
 
                 box-sizing: border-box;
 
@@ -248,46 +269,29 @@
 
             }
 
-            .details {
+            .name {
 
-                height: auto;
-                width: 40%;
-
-
-            }
-
+                font-size: 5vh;
+                }
 
             .pic_and_name {
                 box-sizing: border-box;
 
                 height: auto;
-                width: 55%;
+                width: 70%;
                 margin: auto;
-
-
-
             }
 
-            .name {
+            .details {
 
-                font-size: 5vh;
-            }
-
-            .nav-right button {
                 height: auto;
-                width: 20%;
-                font-size: 2px;
-                text-align: center;
+                width: 80%;
+
+                font-size: 30px;
+
             }
-
-
-
-
 
         }
-
-
-
 
 
 
@@ -296,121 +300,73 @@
 
         /* phones */
 
-        @media (min-width:500px) and (max-width:680px) {
+        @media (min-width:770px) and (max-width:1024px) {
 
-            .main {
-
-
+            .main {         
                 display: block;
-
+               
             }
 
             .nav-left p{
-                font-size: 32px;
+                margin: 7px;
+                font-size: 40px;
+            }
+
+            .nav-right{
+                width: 10%;
+            }
+
+            .nav_right_button{
+                height: 55%;
+                width: 80%;
+                font-size: 11px;
+                font-weight: 500;
+                text-align: center;
             }
 
             .picName {
                 height: auto;
-                width: 100vw;
+                width: 80vw;
+
+                margin: auto;
+
 
                 box-sizing: border-box;
 
                 padding: 20px;
-
-            }
-
-            .details {
-
-                height: auto;
-                width: 50%;
-                margin: auto;
-
-            }
-
-
-            .pic_and_name {
-                box-sizing: border-box;
-
-                height: auto;
-                width: 55%;
-                margin: auto;
-
-
-
-            }
-
-            
-
-            .name{
-                font-size: 5vh;
-            }
-
-
-
-        }
-
-
-
-
-        /* Tabs */
-
-        @media (min-width:680px) and (max-width:1080px) {
-
-            .main {
-
-                display: block;
-
-            }
-
-            
-
-            .nav-left p{
-                font-size: 38px;
-            }
-
-            .picName {
-                height: auto;
-                width: 100vw;
-
-                box-sizing: border-box;
-
-                padding: 20px;
-
-            }
-
-            
-
-            .details {
-
-                height: auto;
-                width: 50%;
-                margin: auto;
-
-            }
-
-
-            .pic_and_name {
-                box-sizing: border-box;
-
-                height: auto;
-                width: 55%;
-                margin: auto;
-
-
 
             }
 
             .name {
 
-                font-size: 7vh;
+                font-size: 5vh;
+                }
+
+            .pic_and_name {
+                box-sizing: border-box;
+
+                height: auto;
+                width: 70%;
+                margin: auto;
+            }
+
+            .details {
+
+                height: auto;
+                width: 90%;
+
+                font-size: 30px;
+
             }
 
 
 
-
-
-
         }
+
+
+
+
+
     </style>
 
 </head>
@@ -426,7 +382,7 @@
 
         <div class="nav-right">
 
-            <button onclick="dark()">Dark Mode</button>
+            <button class="nav_right_button" onclick="dark()">Dark Mode</button>
 
         </div>
 
