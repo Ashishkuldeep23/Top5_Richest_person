@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,162 +11,439 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <style>
-
-        body{
-            padding: 0;margin: 0;
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
             font-family: 'Lato', sans-serif;
         }
-        .header{
+
+        header {
             height: 60px;
-            width: 100%;
-            
+            width: 100vw;
+
             background-color: darkblue;
             color: whitesmoke;
             display: flex;
             justify-content: space-between;
-           
-            
-        }
-
-        .nav-left{
-           height: 100%;
-           /* border: 1px solid red; */
-           width: 20%;
-           
 
 
         }
-        .nav-left p{
+
+        footer {
+            height: 30px;
+            width: 100vw;
+            background-color: darkblue;
+
+            position: static;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        .nav-left {
+            height: 100%;
+            /* border: 1px solid red; */
+            width: 20%;
+
+        }
+
+        .nav-left p {
             margin: 5px 50px;
             font-size: 40px;
             font-weight: 800;
         }
-        .nav-right{
-           height: 100%;
-           /* border: 1px solid red; */
-           width: 10%;
-           
-          
-            
+
+        .nav-right {
+            height: 100%;
+            /* border: 1px solid red; */
+            width: 10%;
+
+
+
         }
 
-        .nav-right button{
+        .nav-right button {
             display: flex;
             margin: auto;
             margin-top: 20px;
             border-radius: 20px;
             border: 2px solid black;
-          
-            
-           
-        }
-        .main{
-            display: flex;
-            
+
+
+
         }
 
-        .picName{
+        .main {
+            display: flex;
+
+        }
+
+        .picName {
             height: 80vh;
             width: 45%;
             padding: 20px;
             /* background-color: red; */
-            
+
             border-radius: 10px;
             display: flex;
             justify-content: center;
             /* text-align: center; */
-            
+
         }
-        .details{
+
+        .details {
             height: 80vh;
             width: 55%;
             padding: 20px;
             /* background-color: green; */
-            border-radius: 40px;  
+            border-radius: 40px;
 
         }
 
-        .footer{
-            height: 30px;
-            width: 100%;
-            background-color: darkblue;
-        }
-        
-    
 
-        .pic_and_name{
+
+
+
+        .pic_and_name {
             height: 80vh;
             background-color: black;
             border: 5px solid black;
             border-radius: 20px;
             width: 55vh;
 
+            box-sizing: border-box;
+
+
             text-align: center;
         }
 
-        .picAshish{
+        .picAshish {
             width: 100%;
             border-radius: 30px;
         }
-        .name{
+
+        .name {
             margin: auto;
             width: 100%;
-            font-size: 37px;
+            font-size: 5vh;
             font-weight: 700;
             text-decoration: underline;
             color: cyan;
         }
-       
 
-        .headingDetails{
-           
+
+        .headingDetails {
+
             font-size: 30px;
             text-decoration: underline;
-            
+
         }
 
 
-        .table_margin{
+        .table_margin {
             margin: 30px 0px;
         }
 
-        .dark-mode{
+        .dark-mode {
             background: black;
-            color: white;    
+            color: white;
         }
 
-        
-       
 
 
+
+
+        /* @media starts */
+
+
+        /* zero size */
+
+        @media (max-width:290px) {
+
+            .main {
+
+               
+                display: block;
+
+            }
+
+            .nav-left p{
+                font-size: 20px;
+            }
+
+            .picName {
+                height: auto;
+                width: 100vw;
+
+                box-sizing: border-box;
+
+                padding: 20px;
+
+            }
+
+            .details {
+
+                height: auto;
+                width: 50%;
+
+                font-size: 10px;
+
+            }
+
+
+            .pic_and_name {
+                box-sizing: border-box;
+
+                height: auto;
+                width: 45%;
+                margin: auto;
+
+
+
+            }
+
+            .name {
+
+                font-size: 3vh;
+            }
+
+            .nav-right button {
+                height: auto;
+                width: 5%;
+                font-size: 1px;
+                text-align: center;
+            }
+
+
+
+
+
+        }
+
+
+
+        /* Small Phones */
+
+        @media (min-width:290px) and (max-width:500px) {
+
+            .main {
+
+                
+
+                display: block;
+
+            }
+
+            .nav-left p{
+                font-size: 28px;
+            }
+
+            .picName {
+                height: auto;
+                width: 100vw;
+
+                box-sizing: border-box;
+
+                padding: 20px;
+
+            }
+
+            .details {
+
+                height: auto;
+                width: 40%;
+
+
+            }
+
+
+            .pic_and_name {
+                box-sizing: border-box;
+
+                height: auto;
+                width: 55%;
+                margin: auto;
+
+
+
+            }
+
+            .name {
+
+                font-size: 5vh;
+            }
+
+            .nav-right button {
+                height: auto;
+                width: 20%;
+                font-size: 2px;
+                text-align: center;
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        /* phones */
+
+        @media (min-width:500px) and (max-width:680px) {
+
+            .main {
+
+
+                display: block;
+
+            }
+
+            .nav-left p{
+                font-size: 32px;
+            }
+
+            .picName {
+                height: auto;
+                width: 100vw;
+
+                box-sizing: border-box;
+
+                padding: 20px;
+
+            }
+
+            .details {
+
+                height: auto;
+                width: 50%;
+                margin: auto;
+
+            }
+
+
+            .pic_and_name {
+                box-sizing: border-box;
+
+                height: auto;
+                width: 55%;
+                margin: auto;
+
+
+
+            }
+
+            
+
+            .name{
+                font-size: 5vh;
+            }
+
+
+
+        }
+
+
+
+
+        /* Tabs */
+
+        @media (min-width:680px) and (max-width:1080px) {
+
+            .main {
+
+                display: block;
+
+            }
+
+            
+
+            .nav-left p{
+                font-size: 38px;
+            }
+
+            .picName {
+                height: auto;
+                width: 100vw;
+
+                box-sizing: border-box;
+
+                padding: 20px;
+
+            }
+
+            
+
+            .details {
+
+                height: auto;
+                width: 50%;
+                margin: auto;
+
+            }
+
+
+            .pic_and_name {
+                box-sizing: border-box;
+
+                height: auto;
+                width: 55%;
+                margin: auto;
+
+
+
+            }
+
+            .name {
+
+                font-size: 7vh;
+            }
+
+
+
+
+
+
+        }
     </style>
 
 </head>
+
 <body>
-    <div class="header">
+
+    <header>
         <div class="nav-left">
             <p>Home</p>
         </div>
-         
+
 
 
         <div class="nav-right">
-        
+
             <button onclick="dark()">Dark Mode</button>
-            
+
         </div>
-    </div>
+
+    </header>
+
+
 
     <div class="main">
-        
+
         <div class="picName">
             <div class="pic_and_name">
-                <img class="picAshish" src="../periodic_table_by_Ashish/Ashish.jpg" alt="Ashis_Image">
+                <img class="picAshish" src="Ashish.jpg" alt="Ashis_Image">
                 <h2 class="name">Ashish Kuldeep</h2>
             </div>
-           
+
         </div>
-        
+
         <div class="details">
             <div>
                 <h2 class="headingDetails"> Details </h2>
@@ -173,7 +451,7 @@
 
             <div class="detail_table">
                 <table class="table_margin">
-                    <th >Personal Data</th>
+                    <th>Personal Data</th>
                     <tr>
                         <td><b>Full Name:</b></td>
                         <td>Ashish Kuldeep</td>
@@ -223,12 +501,12 @@
                     <th>Social Media </th>
                     <tr>
                         <td><b>Accounts:</b></td>
-                        <td>Facebook,Instagram,Iinkdin,Tiwtter</td>
+                        <td>Facebook , Instagram , Iinkdin , Tiwtter</td>
                     </tr>
 
                 </table>
-                    
-                
+
+
 
             </div>
 
@@ -240,15 +518,13 @@
 
 
 
-    <div class="footer">
+    <footer>
 
-    </div>
-
-
+    </footer>
 
     <script>
 
-    function dark(){
+        function dark() {
             var element = document.body;
             element.classList.toggle("dark-mode");
         }
@@ -257,4 +533,5 @@
         // button.addEventListener('click',bgcolor)
     </script>
 </body>
+
 </html>
